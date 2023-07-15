@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
+
   <body>
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
+
     <main>
+
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
+          <li>There are three ways to style a webpage using CSS: inline CSS, internal CSS style sheet, and external CSS style sheet.</li>
           <li>The head element contains information about the webpage, such as metadata.</li>
           <li>The body element represents the visible content shown to the user.</li>
           <li>Metadata examples for head: title, style, base, link, meta, script.</li>
@@ -24,14 +29,30 @@
           <li>a href=link where a is for an anchor which creates links, href is the url for the link.</li>
           <li>header appears at the top and usually contains navigational/introductory content.</li>
           <li>h1 to h6 are headings, to be used in order, where h1 is used once per page, and the others are used after. (Each header gets smaller.)</li>
-        <li>footer at the bottom of the page, contains navigation, copyright, sitemap, contact, etc. In our case we have a note.</li>
+          <li>footer at the bottom of the page, contains navigation, copyright, sitemap, contact, etc. In our case we have a note.</li>
+          <li> <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">Learn more about HTML/Links!</a> </li>
         </ul>
       </section>
    
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ui>
-          <li>wip</li>
+          <li>A margin indicates how much space we want around the outside of an element.</li>
+          <li>the most common way to style a webpage is by using an external CSS style sheet. This is preferred in most cases because it allows developers to keep all their CSS rules in a separate file, which makes design changes easier.
+            When using an external style sheet, we link the file using a &lt;link&gt; element placed in the HTML's &lt;head&gt;, as shown in the following code:
+              &lt;head&gt;
+                &lt; rel="stylesheet" href="./assets/style.css" /&gt;
+                &lt;/head&gt;
+          </li>
+          <li>margin: 40px auto; (use ; to add more stlying), assigns 40px to the top and bottom, and the auto value to the left and right.</li>
+          <li>A padding indicates how much space we want around the content inside an element. ex/ padding: 10px 50x; </li>
+          <li>A period preceding card designates this as a class selector. Any HTML element assigned to the class, card, will gain these property assignments from the CSS.</li>
+          <li>width: 80% = Width of the element at 80% of the available width</li>
+          <li>border: 5px solid gray = assigns a border with a width of 5px that is solid and gray.</li>
+          <li>selector (property; value) </li>
+          <li>Sometimes, we want to apply a rule to all the elements visible on the page. To do that, we use a special wild card symbol, or *.</li>
+          <li>Declarations contain two important components: the CSS property we want to apply and the value of the property. For example, the declaration color: blue; includes the CSS property color and the value for that property, blue.</li>
+          <li> <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" target="_blank">Learn more about CSS styling!</a> </li>
         </ui>
       </section>
    
@@ -42,21 +63,37 @@
           <li>Use git commands in your computers terminal (open with git bash).</li>
           <li>git status: checks what branch we are currently on</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-          <li> wip </li>
+          <li>wip</li>
         </ui>
       </section>
-   
+
       <section class="card" id="javascript-section">
         <h2>JAVASCRIPT</h2>
         <ui>
           <li>wip</li>
         </ui>
       </section>
+
+      <section class="card" id="issues-section">
+        <h2>Issues</h2>
+        <ui>
+          <li>Trying to make the border fully visible on all sides. <a href="https://www.youtube.com/watch?v=6RuzhtsbSIg" target="_blank">How to setup borders. (link)</a> <a href="https://www.w3schools.com/css/css_border.asp" target="_blank">w3schools Borders info (link)</a></li>
+          <li>Trying to have the style for the li inbetween each section the same, since for some reason the html section is doing its own thing.</li>
+          <li>How to have my changes in VS code appear instantly somewhere for easier testing/observing.</li>
+          <li>How to add a grammar corrector to vs code to help with spelling mistakes.</li>
+          <li>How to increase the padding within the border of the sections so that the list has some space from the border. </li>
+          <li>Come back to this abomination and keep testing fun features on it. Name it "Frankstein Study Guide."!</li>
+          <li>How to add css code to show up as plain text so I can use it in my notes. <a href=https://www.geeksforgeeks.org/html-entities/ target="_blank">How to show reserved symbols.</a> </li>
+        </ui>
+      </section>
     </main>
 
     <footer>
       <p>I can code!</p>
-      <p> Or can I?!</p>
+
+      <p>Or can I?!</p>
+
+      <p> Hades was here. >:) </p>
     </footer>
   </body>
 </html>
